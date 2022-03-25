@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./dist/img/logo-xs.svg">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <style>
+    a {
+      text-decoration: none !important;
+    }
+    .navbar {
+      background-color: #0F242C;
+    }
+    .main-content {
+      /*background-image: url(./dist/img/bg-login.jpg);*/
+
+      height: 75vh;
+    }
+    .card-header {
+      font-weight: bold;
+    }
+    .card-body i {
+      color: #0F242C;
+      font-size: 2rem;
+      width: 80px;
+      padding: 1.5rem;
+      background-color: #ffda37;
+      border-radius: 50%;
+    }
+    .bg-secondary {
+      background-color: #0F242C !important;
+    }
+    .bg-primary {
+      background-color: #ffda37 !important;
+    }
+    .sticky-top.scrolled {
+      background-color: #ffda37 !important;
+      transition: background-color 200ms linear;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.521);
+    }
+
+    .scrolled .navbar-brand span, .scrolled .nav-item a {
+      color:#222 !important;
+      transition: color 200ms linear;
+    }
+
+    .navbar-brand span {
+      color: rgb(236, 193, 0);
+      font-weight: 500;
+    }
+
+    .card {
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .card:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+
+    @media only screen and (max-width: 800px) {
+      .navbar-brand span {
+          font-size: 0.8rem;
+      }
+      iframe {
+        width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100811329221246");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="./dist/img/logo-xs.svg" width="50px">
+          <span>Red Hen Poultry Farm Enterprise</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+          aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-2">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#products" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#teams" class="nav-link">Teams</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item ps-2">
+              <b><a href="login.php" class="nav-link"><i class="fas fa-user-circle"></i> Login</a></b>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main-content bg-secondary text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="">
+            <h2><span style="background-color: #ffda37; color: #222; padding: 0.3rem;">#1 Poultry Egg Seller in the Metro</span></h2>
+            <p class="lead my-4">The leading and most trusted poultry farm in the Metro. Supplying quality, fresh, and well-handled poultry goods across the Nation’s Capital and nearby provinces and among hundreds of convenience and department stores.</p>
+          </div>
+          <img class="img-fluid w-50 d-none d-md-block" src="dist/img/landing-sprite.png" alt="lead-picture">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white text-dark mb-5 p-5" id="products">
+      <div class="container">
+        <div class="text-center mb-5 px-5">
+          <h2 class="mb-3">Products</h2>
+          <p>Red Hen Poultry Farm Enterprise offers basic but well-crafted products and services from Poultry Care, Egg Production to Farm Partnerships.</p>
+        </div>
+        <div class="row text-dark justify-content-md-center text-center">
+          
+          <div class="col-md-3 card mx-3 my-4 p-0">
+            <div class="card-body">
+                <br>
+                <div class="text-center">
+                  <i class="fab fa-earlybirds" style="color: #097daa"></i>
+                </div><br>
+                <h5>Poultry Care</h5><br>
+              <p>We ensure our poultry farm is handled by capable and trusted employees from farmers to nutritionists. We believe that poultry farm requires an intensive care and love as we raise them to a stress-free environment assuring that all our goods will be of good quality.</p>
+            </div>
+          </div>
+          <div class="col-md-4 card mx-3 p-0">
+            <div class="card-body">
+                <br>
+                <div class="text-center">
+                  <i class="fas fa-egg" style="color: #e78514"></i>
+                </div><br>
+                <h5>Egg Production</h5><br>
+              <span style="font-style: italic">We believe that our customers deserve the best of the best kind of chicken eggs.</span><br><br>
+              <p>Our egg production is well handled by capable and trusted employees to ensure all eggs will be serving on the table are fresh and has acquired proper nutrition from the chickens. We always ensure that all eggs passed all the requirements from egg production, collection, to distribution before we deliver it at your doorstep. </p>
+            </div>
+          
+          </div>
+          <div class="col-md-3 card mx-3 my-4 p-0">
+            <div class="card-body">
+                <br>
+                <div class="text-center">
+                  <i class="fas fa-project-diagram" style="color: #40940f"></i>
+                </div><br>
+                <h5>Farm Partnership</h5><br>
+              <p>We believe that all farmers and inspired individuals that desires to start a poultry farm business needs to be guided. We are open to conduct seminars, workshops and even partnerships to help start-up businesses to earn a spot in the market. 
+
+</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-secondary text-light mb-5 p-5" id="teams">
+      <div class="container">
+        <div class="text-center mb-5 px-5">
+          <h2 class="mb-3">Teams</h2>
+          <p>Our team is divided into several teams each of having qualified and capable employees that assures our operations goes smoothly and our goods and serviced to be of good quality.</p>
+        </div>
+        <div class="row text-dark text-center">
+          <div class="col-md card mx-4 p-0">
+            <div class="card-body">
+                <br>
+                <div class="text-center">
+                  <i class="fas fa-kiwi-bird" style="color: #40940f"></i>
+                </div><br>
+                <h5>Bird Management</h5><br>
+              <p>Our employees regularly check and assess the condition of our birds for egg production. They are trusted to record farm activities such as the managing the bird population needed for tracking the poultry farm’s status and bird conditions.</p>
+                
+            </div>
+        
+          </div>
+          <div class="col-md card mx-4 p-0">
+            <div class="card-body">
+                <br>
+                <div class="text-center">
+                  <i class="fas fa-capsules" style="color: #ff3333"></i>
+                </div><br>
+                <h5>Resource Management</h5><br>
+              <p>Checks resource status pertaining to consumption, either daily, weekly, or monthly. This is to keep track and replenish resources to ensure all resources needed is highly accessible and won’t cause any opportunity loss.</p>
+                
+            </div>
+          </div>
+          <div class="col-md card mx-4 p-0">
+            <div class="card-body">
+                <br>
+                <div class="text-center">
+                  <i class="fas fa-egg" style="color: #e78514"></i>
+                </div><br>
+                <h5>Egg Production</h5><br>
+              <p>Conducts assessment on eggs that are produced by the birds. This is to ensure that all egg that will be sold are of good condition and quality. Moreover, daily egg produce are recorded daily to acquire a picture of egg production trend.</p>
+                
+            </div>
+          </div>
+          <div class="col-md card mx-4 p-0">
+            <div class="card-body">
+                <br>
+                <div class="text-center">
+                  <i class="fas fa-user" style="color: #097daa"></i>
+                </div><br>
+                <h5>User Control</h5><br>
+              <p>This team is entrusted to control users that will access the system and control any malicious attempt to access data of the poultry farm that could become a threat for the overall enterprise operations.</p>
+                
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white text-dark mb-5 p-5" id="about">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="mb-3">About</h2>
+        </div>
+        <div class="row">
+          <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.0307582854389!2d121.04627968460277!3d14.6524494219629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7101def8bd1%3A0xd9fd1d01ccde143c!2sPhilippine%20Council%20for%20Agriculture%20and%20Fisheries!5e0!3m2!1sen!2sph!4v1644991790964!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>          </div>
+          <div class="col">
+            <div>
+              <p><b>What is RedHen Poultry Farm Enterprise?</b></p>
+            </div>
+            <div>
+              <p>We are a Poultry Farm Enterprise that offers goods and services that are of good quality. We take a stand on poultry farms to be competitive in terms of production and the entire workforce. We believe that all our customers deserve the best that’s why we hire capable and trusted employees, we also conduct trainings for newly hired staffs to make them all capable.
+              <br><br><span style="color: #FC4CAA">WE ARE FOR MATINO AT MAHUSAY!</span></p>
+              <br><br>
+              <p><b>Contact Us!</b></p>
+              <p>Address: Apacible Hall, Department of Agriculture Compound, Elliptical Road,<br>&emsp;&emsp;&emsp;&emsp;Diliman, Quezon City, Metro Manila, Philippines, 1107<br>
+                 Telephone: (02) 5335 1787<br>
+                Email: concerns@redhenent.com
+              </p>
+
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-dark text-secondary">
+      <div class="container py-4">
+        <img src="./dist/img/logo-xs.svg" width="30px">
+        
+        <a href="#" class="navbar-brand" style="color: #ffda37;">Red Hen Poultry Farm Enterprise</a>
+        <div class="" style="float: right;">
+          <div class="text-end" style="font-size: 2.5rem;">
+            <a href="#"><i class="fas fa-chevron-circle-up"></i></a>
+          </div>
+          
+          <div style="background-color: #ffda37; padding: 0.3rem">
+            <img src="./dist/img/logo-xl.svg" width="130px">
+          </div>
+          
+        </div>
+        <p>Apacible Hall, Department of Agriculture Compound, Elliptical Road,<br> Diliman, Quezon City, Metro Manila, Philippines, 1107<br>(02) 5335 1787</p>
+        <p>Copyright &copy; 2022 Red Hen Poultry Farm Enterprise. All rights reserved.</p>
+        
+      </div>
+      
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".sticky-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+  </script>
+</body>
+</html>

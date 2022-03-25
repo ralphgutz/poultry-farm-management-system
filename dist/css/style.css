@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "June Pro Bold";
+    src: url(fonts/JunePro-Medium.ttf);
+}
+
+@font-face {
+    font-family: "June Pro Regular";
+    src: url(fonts/JunePro-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: "June Pro Light";
+    src: url(fonts/JunePro-Light.ttf);
+}
+
+body {
+    font-family: "June Pro Regular", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "June Pro Bold", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.container-bg {
+    background: #686868;
+}
+
+.bg-custom {
+    background:#0F242C;
+}
+
+.bg-custom1 {
+    background: #0C1D26;
+}
+
+.bg-custom2 {
+    background: #0A1A1F;
+}
+/* OVERRIDES FROM ADMINLTE CSS */
+
+.active-item .active {
+    background-color: #d4ae01 !important;
+}
+
+.nav-item .logout {
+    color: #e04646 !important;
+}
+
+.sidebar .nav-item:not(.active-item) a:hover {
+    color: #fff;
+  background-color: rgba(168, 168, 168, 0.075);
+}
+
+.alert-danger {
+    background-color: #e04646 !important;
+    color: #fff !important;
+}
+
+.alert {
+    padding-left: 6rem !important;
+}
+
+.dt-buttons button {
+    background-color: #fff !important;
+    font-weight: 400 !important;
+    color: #000;
+    border: none;
+}
+
+.dt-buttons button:hover {
+    background-color: rgb(212, 212, 212) !important;
+    color: #000;
+}
+
+
+/* OVERRIDES FROM BOOTSTRAP */
+
+.btn-danger {
+    background-color: #e04646;
+    padding: 1px 12px 1px 12px !important;
+}
+
+
+.fa-sign-out-alt {
+    color: #e04646;
+}
+
+
+aside  a:hover {
+    color: red;
+}
+
+
+hr {
+    border-color: #ccc !important;
+}
+
+.breadcrumb-item a, footer a  {
+    color: #d4ae01;
+}
+
+.breadcrumb-item a:hover, footer a:hover  {
+    color: #a78800;
+}
+
+.btn {
+    font-weight: bold !important;
+}
+
+input:read-only {
+    background-color: #ccc !important;
+}
